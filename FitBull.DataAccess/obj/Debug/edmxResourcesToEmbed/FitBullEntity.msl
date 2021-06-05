@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FitBullModelStoreContainer" CdmEntityContainer="FitBullEntities">
+    <EntitySetMapping Name="Antrenman">
+      <EntityTypeMapping TypeName="FitBullModel.Antrenman">
+        <MappingFragment StoreEntitySet="Antrenman">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AntrenmanAdi" ColumnName="AntrenmanAdi" />
+          <ScalarProperty Name="SetSayisi" ColumnName="SetSayisi" />
+          <ScalarProperty Name="HareketSayisi" ColumnName="HareketSayisi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diyet">
+      <EntityTypeMapping TypeName="FitBullModel.Diyet">
+        <MappingFragment StoreEntitySet="Diyet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DiyetAdi" ColumnName="DiyetAdi" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="FitBullModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kategori1" ColumnName="Kategori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="FitBullModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Boy" ColumnName="Boy" />
+          <ScalarProperty Name="Kilo" ColumnName="Kilo" />
+          <ScalarProperty Name="YagOrani" ColumnName="YagOrani" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oneri">
+      <EntityTypeMapping TypeName="FitBullModel.Oneri">
+        <MappingFragment StoreEntitySet="Oneri">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="AntrenmanID" ColumnName="AntrenmanID" />
+          <ScalarProperty Name="DiyetID" ColumnName="DiyetID" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="FitBullModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Rol1" ColumnName="Rol" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

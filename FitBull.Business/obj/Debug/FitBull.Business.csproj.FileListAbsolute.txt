@@ -1,0 +1,11 @@
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.Business.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.Business.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.Business.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\EntityFramework.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\EntityFramework.xml
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.csproj.CoreCompileInputs.cache
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.csproj.CopyComplete
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.pdb

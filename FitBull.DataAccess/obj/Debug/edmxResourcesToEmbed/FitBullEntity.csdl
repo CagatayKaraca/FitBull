@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FitBullModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Antrenman">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AntrenmanAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SetSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HareketSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Oneri" Relationship="Self.FK_Oneri_Antrenman" FromRole="Antrenman" ToRole="Oneri" />
+  </EntityType>
+  <EntityType Name="Diyet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DiyetAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Oneri" Relationship="Self.FK_Oneri_Diyet" FromRole="Diyet" ToRole="Oneri" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kategori1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Oneri" Relationship="Self.FK_Oneri_Kategori" FromRole="Kategori" ToRole="Oneri" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RolID" Type="Int32" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Boy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kilo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YagOrani" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_Kullanici_Rol" FromRole="Kullanici" ToRole="Rol" />
+    <NavigationProperty Name="Oneri" Relationship="Self.FK_Oneri_Kullanici" FromRole="Kullanici" ToRole="Oneri" />
+  </EntityType>
+  <EntityType Name="Oneri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciID" Type="Int32" />
+    <Property Name="KategoriID" Type="Int32" />
+    <Property Name="AntrenmanID" Type="Int32" />
+    <Property Name="DiyetID" Type="Int32" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Antrenman" Relationship="Self.FK_Oneri_Antrenman" FromRole="Oneri" ToRole="Antrenman" />
+    <NavigationProperty Name="Diyet" Relationship="Self.FK_Oneri_Diyet" FromRole="Oneri" ToRole="Diyet" />
+    <NavigationProperty Name="Kategori" Relationship="Self.FK_Oneri_Kategori" FromRole="Oneri" ToRole="Kategori" />
+    <NavigationProperty Name="Kullanici" Relationship="Self.FK_Oneri_Kullanici" FromRole="Oneri" ToRole="Kullanici" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rol1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Kullanici" Relationship="Self.FK_Kullanici_Rol" FromRole="Rol" ToRole="Kullanici" />
+  </EntityType>
+  <Association Name="FK_Oneri_Antrenman">
+    <End Role="Antrenman" Type="Self.Antrenman" Multiplicity="0..1" />
+    <End Role="Oneri" Type="Self.Oneri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Antrenman">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Oneri">
+        <PropertyRef Name="AntrenmanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oneri_Diyet">
+    <End Role="Diyet" Type="Self.Diyet" Multiplicity="0..1" />
+    <End Role="Oneri" Type="Self.Oneri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diyet">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Oneri">
+        <PropertyRef Name="DiyetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oneri_Kategori">
+    <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+    <End Role="Oneri" Type="Self.Oneri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategori">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Oneri">
+        <PropertyRef Name="KategoriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kullanici_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Kullanici">
+        <PropertyRef Name="RolID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oneri_Kullanici">
+    <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+    <End Role="Oneri" Type="Self.Oneri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kullanici">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Oneri">
+        <PropertyRef Name="KullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FitBullEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Antrenman" EntityType="Self.Antrenman" />
+    <EntitySet Name="Diyet" EntityType="Self.Diyet" />
+    <EntitySet Name="Kategori" EntityType="Self.Kategori" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+    <EntitySet Name="Oneri" EntityType="Self.Oneri" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <AssociationSet Name="FK_Oneri_Antrenman" Association="Self.FK_Oneri_Antrenman">
+      <End Role="Antrenman" EntitySet="Antrenman" />
+      <End Role="Oneri" EntitySet="Oneri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oneri_Diyet" Association="Self.FK_Oneri_Diyet">
+      <End Role="Diyet" EntitySet="Diyet" />
+      <End Role="Oneri" EntitySet="Oneri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oneri_Kategori" Association="Self.FK_Oneri_Kategori">
+      <End Role="Kategori" EntitySet="Kategori" />
+      <End Role="Oneri" EntitySet="Oneri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kullanici_Rol" Association="Self.FK_Kullanici_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Kullanici" EntitySet="Kullanici" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oneri_Kullanici" Association="Self.FK_Oneri_Kullanici">
+      <End Role="Kullanici" EntitySet="Kullanici" />
+      <End Role="Oneri" EntitySet="Oneri" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.Business.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.Business.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.Business.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\EntityFramework.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.DataAccess.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.DataAccess.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\FitBull.DataAccess.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\EntityFramework.xml
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Release\FitBull.Business.csproj.CoreCompileInputs.cache
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Release\FitBull.Business.csproj.CopyComplete
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Release\FitBull.Business.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Release\FitBull.Business.pdb
