@@ -9,3 +9,7 @@ C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Busines
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.csproj.CopyComplete
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.dll
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.DataAccess.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.DataAccess.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\bin\Debug\FitBull.DataAccess.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Business\obj\Debug\FitBull.Business.csprojAssemblyReference.cache

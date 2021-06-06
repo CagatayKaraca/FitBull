@@ -60,3 +60,10 @@ C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\obj\Debug\FitBull.Web.csproj.C
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\obj\Debug\FitBull.Web.csproj.CopyComplete
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\obj\Debug\FitBull.Web.dll
 C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\obj\Debug\FitBull.Web.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.Business.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.DataAccess.dll
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.Business.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.Business.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.DataAccess.pdb
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\bin\FitBull.DataAccess.dll.config
+C:\Users\Cagatay\source\repos\FitBull\FitBull.Web\obj\Debug\FitBull.Web.csprojAssemblyReference.cache

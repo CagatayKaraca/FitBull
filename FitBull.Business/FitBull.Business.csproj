@@ -64,6 +64,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitBull.DataAccess\FitBull.DataAccess.csproj">
+      <Project>{2e2661e0-d7e1-4bcb-807c-de062ceec197}</Project>
+      <Name>FitBull.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

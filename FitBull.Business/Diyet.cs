@@ -8,6 +8,5 @@ namespace FitBull.Business
 {
     public class Diyet
     {
-        public static readonly DataAccess.FitBullEntities fitBullEntities = new DataAccess.FitBullEntities();
     }
 }

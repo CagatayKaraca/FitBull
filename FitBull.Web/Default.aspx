@@ -26,8 +26,8 @@
                 <span class="info-box-icon"><i class="fas fa-tag"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Inventory</span>
-                    <span class="info-box-number">5,200</span>
+                    <span class="info-box-text">Duyurular Bölümü</span>
+                    <span class="info-box-number">2</span>
                 </div>
                 <!-- /.info-box-content -->
             </div>
@@ -36,8 +36,8 @@
                 <span class="info-box-icon"><i class="far fa-heart"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Mentions</span>
-                    <span class="info-box-number">92,050</span>
+                    <span class="info-box-text">Kampanyalar Bölümü</span>
+                    <span class="info-box-number">null</span>
                 </div>
                 <!-- /.info-box-content -->
             </div>
@@ -46,8 +46,8 @@
                 <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Downloads</span>
-                    <span class="info-box-number">114,381</span>
+                    <span class="info-box-text">Tavsiyeler Bölümü</span>
+                    <span class="info-box-number">null</span>
                 </div>
                 <!-- /.info-box-content -->
             </div>
@@ -56,8 +56,8 @@
                 <span class="info-box-icon"><i class="far fa-comment"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Direct Messages</span>
-                    <span class="info-box-number">163,921</span>
+                    <span class="info-box-text">Son Kullanıcılar Bölümü</span>
+                    <span class="info-box-number">5</span>
                 </div>
                 <!-- /.info-box-content -->
             </div>

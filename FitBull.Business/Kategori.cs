@@ -8,5 +8,6 @@ namespace FitBull.Business
 {
     public class Kategori
     {
+        
     }
 }
